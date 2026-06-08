@@ -315,10 +315,10 @@ function decrypt_message_runique(BitFusion $b, string $key): string {
     $plainBit = decrypt_bitfusion($b, $key);
     return decode_megafusion_to_char($plainBit); // symbole profil
 }
-$secret = encrypt_message_runique("ᛇ‑FUSION‑OK", "Q{Mm&Qyhhw0:wix7#NYE6dzcQ2");
+$secret = encrypt_message_runique("ᛇ‑FUSION‑OK", "Q{Mm&Qyhhw0:wix7#NYE6dzcQ2"); //Change by your secret key
 // stockage / envoi…
 
-echo decrypt_message_runique($secret, "Q{Mm&Qyhhw0:wix7#NYE6dzcQ2");
+echo decrypt_message_runique($secret, "Q{Mm&Qyhhw0:wix7#NYE6dzcQ2"); //Change by your secret key
 
 
 function bitfusion_packet_encode(string $msg, string $mode = 'plain', ?string $key = null): string {
